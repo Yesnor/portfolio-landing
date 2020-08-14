@@ -263,31 +263,28 @@ header {
 @media screen and (max-width: 500px) {
   header {
     .logo {
-    display: none;
+      display: none;
+    }
+    nav {
+      margin: 0 auto;
+    }
   }
-  nav {
-    margin: 0 auto;
-  } 
+
+  .home {
+    height: 500px;
+    .home-shadow {
+      height: 500px;
+    }
   }
-   
-   .home {
-     height: 500px; 
-     .home-shadow {
-        height: 500px; 
-     }    
-   }
-
-
 }
 
 @media screen and (max-width: 700px) {
-  
-   .home {
-     height: 600px; 
-     .home-shadow {
-        height: 600px; 
-     }    
-   }
+  .home {
+    height: 600px;
+    .home-shadow {
+      height: 600px;
+    }
+  }
   .contact {
     height: auto;
     padding: 0.5em 1em;
@@ -310,13 +307,13 @@ header {
     }
   }
 }
-@media screen and (min-width: 700px) {  
-   .home {
-     height: 650px; 
-     .home-shadow {
-        height: 650px; 
-     }    
-   }
+@media screen and (min-width: 700px) {
+  .home {
+    height: 650px;
+    .home-shadow {
+      height: 650px;
+    }
+  }
   .contact {
     height: auto;
     padding: 2em 6em;
@@ -431,6 +428,17 @@ header {
     height: 1200px;
     .home-shadow {
       height: 1200px;
+    }
+    .home__desc {
+      font-size: 3rem;
+    }
+  }
+  .portfolio__text {
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 2rem !important;
     }
   }
 }

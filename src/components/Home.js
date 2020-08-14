@@ -2,11 +2,9 @@ import React, { useEffect, useState } from "react";
 import useScrollPosition from "./hooks/useScrollPosition";
 
 export default function Home() {
-  const [hide, setHide] = useState(false);
-
-  const scrollPosition = useScrollPosition();
-  console.log(scrollPosition);
-  useEffect(() => {}, [scrollPosition]);
+  // const scrollPosition = useScrollPosition();
+  const scrollPosition = 100;
+  // useEffect(() => {}, [scrollPosition]);
   return (
     <section className="home">
       <div className="home-shadow"></div>
