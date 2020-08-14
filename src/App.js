@@ -6,12 +6,12 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <Home />
       <Portfolio />
       <Contact />
-    </div>
+    </>
   );
 }
 

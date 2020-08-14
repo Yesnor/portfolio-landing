@@ -12,8 +12,8 @@ export default function Header() {
           <img src={logo} alt="" />
         </a>
       </div>
-      <nav className="">
-        <ul className="">
+      <nav>
+        <ul>
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>

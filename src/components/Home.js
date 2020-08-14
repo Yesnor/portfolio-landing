@@ -15,21 +15,21 @@ export default function Home() {
           scrollPosition >= 200 ? "home__title invisible" : "home__title"
         }
       >
-        PAVEL HUZA
+        Micro Craft
       </h1>
       <h4
         className={
           scrollPosition >= 300 ? "home__desc invisible" : "home__desc"
         }
       >
-        I'm a Czech Republic based web designer & front‑end developer focused on
-        crafting clean & user‑friendly experiences.
+        Custom and neat webdesign & front‑end development focused on crafting
+        clean & user‑friendly experiences.
       </h4>
       <button
         href="#"
         className={scrollPosition >= 350 ? "home__btn invisible" : "home__btn"}
       >
-        CHECK MY WORK
+        CHECK OUR WORK
       </button>
     </section>
   );

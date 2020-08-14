@@ -6,8 +6,8 @@ export default function Contact() {
       <h1>Let's Create</h1>
       <h1>Something Great</h1>
       <p>
-        If you like my work and have some cool project to work on, just send me
-        direct message or contact me through social sites listed below.
+        If you like our work and have some cool project to work on, just send us
+        direct message or contact us through social sites listed below.
       </p>
       <button className="btn">GET IN TOUCH</button>
       <ul>
