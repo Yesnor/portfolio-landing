@@ -12,19 +12,19 @@ export default function Contact() {
       <button className="btn">GET IN TOUCH</button>
       <ul>
         <li>
-          <a href="#">twitter</a>
+          <a href="https://twitter.com/">twitter</a>
         </li>
         <li>
-          <a href="#">dribble</a>
+          <a href="https://dribbble.com/">dribble</a>
         </li>
         <li>
-          <a href="#">behance</a>
+          <a href="https://www.behance.net/">behance</a>
         </li>
         <li>
-          <a href="#">facebook</a>
+          <a href="https://www.facebook.com/">facebook</a>
         </li>
         <li>
-          <a href="#">instagram</a>
+          <a href="https://www.instagram.com/">instagram</a>
         </li>
       </ul>
     </section>

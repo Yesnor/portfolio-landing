@@ -136,7 +136,7 @@ header {
     transition: all 1s;
     &:hover {
       background-color: white;
-      color: rgba(255, 0, 0, 0.4);
+      color: red;
     }
   }
 }
@@ -229,10 +229,12 @@ header {
       border: 1px solid #d24d57;
     }
   }
+
   ul {
     display: flex;
-    width: 500px;
+    width: 100%;
     margin: 3em auto;
+    transition: all 1s;
     li:last-child {
       border: none;
     }
@@ -260,6 +262,26 @@ header {
   }
 }
 
+.arrow-to-top {
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.7em;
+  transition: all 0.7s;
+  opacity: 0;
+  transition: all 1s;
+  &.show {
+    opacity: 1;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: var(--primary);
+  }
+  .material-icons {
+    color: orange;
+    font-size: 4rem;
+  }
+}
 @media screen and (max-width: 500px) {
   header {
     .logo {
@@ -275,6 +297,15 @@ header {
     .home-shadow {
       height: 500px;
     }
+  }
+  .contact {
+    ul li a {
+      font-size: 0.5rem;
+    }
+  }
+  .arrow-to-top {
+    position: fixed;
+    bottom: 2.4em;
   }
 }
 
