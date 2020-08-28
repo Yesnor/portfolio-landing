@@ -85,7 +85,8 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
-        {/* <div className="portfolio__item">
+        {/* 
+          <div className="portfolio__item">
           <div className="portfolio__item--image">
             <img src={img5} alt="" />
           </div>
