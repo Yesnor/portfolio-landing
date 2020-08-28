@@ -3,6 +3,7 @@ import img1 from "../img/1.jpg";
 import img3 from "../img/3.jpg";
 import img2 from "../img/2.jpg";
 import img4 from "../img/4.jpg";
+import img5 from "../img/5.jpg";
 
 export default function Portfolio() {
   return (
@@ -11,8 +12,8 @@ export default function Portfolio() {
         {" "}
         <h1>Portfolio</h1>
         <p>
-          Below you can see some projects we've been working on lately. We divide
-          each project into four follow-up areas: comprehensive research,
+          Below you can see some projects we've been working on lately. We
+          divide each project into four follow-up areas: comprehensive research,
           wireframing, design & development. This process allows us to create
           great product with client goals in mind.
         </p>
@@ -84,6 +85,20 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
+        {/* <div className="portfolio__item">
+          <div className="portfolio__item--image">
+            <img src={img5} alt="" />
+          </div>
+          <div className="portfolio__item--aside">
+            <h3>Skyline Hotel</h3>
+            <p>You can find here a decent hotel website</p>
+
+            <a href="https://skyline-hotel.netlify.app/" className="btn">
+              MORE AT THIS LINK
+            </a>
+          </div>
+        </div>
+  */}
       </div>
     </section>
   );

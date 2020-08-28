@@ -176,7 +176,7 @@ header {
         margin-bottom: 1em;
       }
       a {
-        padding: 5px 3em;
+        padding: 5px 1em;
         margin-top: 2em;
         border: 1px solid #d24d57;
         transition: background-color 0.8s, color 0.8s;
@@ -220,12 +220,13 @@ header {
   color: white;
   background: #d24d57;
   h1 {
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: white;
   }
   p {
     padding: 1em;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   button {
     color: white;
@@ -255,7 +256,7 @@ header {
         color: white;
         text-transform: uppercase;
         transition: all 1s;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding: 0.4em;
         &:hover {
           background: white;
@@ -320,6 +321,9 @@ header {
       h1 {
         font-size: 3rem;
       }
+    }
+    .portfolio__item .portfolio__item--aside a {
+      padding: 5px 3em;
     }
   }
   .contact {
