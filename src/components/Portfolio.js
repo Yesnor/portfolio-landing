@@ -4,6 +4,7 @@ import img3 from "../img/3.jpg";
 import img2 from "../img/2.jpg";
 import img4 from "../img/4.jpg";
 import img5 from "../img/5.jpg";
+import "../animation-library/fade.scss";
 
 export default function Portfolio() {
   return (
@@ -85,11 +86,8 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
-        {/* 
-          <div className="portfolio__item">
-          <div className="portfolio__item--image">
-            <img src={img5} alt="" />
-          </div>
+
+        <div className="portfolio__item">
           <div className="portfolio__item--aside">
             <h3>Skyline Hotel</h3>
             <p>You can find here a decent hotel website</p>
@@ -98,8 +96,10 @@ export default function Portfolio() {
               MORE AT THIS LINK
             </a>
           </div>
+          <div className="portfolio__item--image">
+            <img src={img5} alt="" />
+          </div>
         </div>
-  */}
       </div>
     </section>
   );
