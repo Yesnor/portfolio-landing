@@ -143,6 +143,74 @@ header {
   }
 }
 
+.curtain {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  max-height: 650px;
+  border: 1px solid black;
+  overflow: hidden;
+
+  .curtain-drag:hover {
+    cursor: move;
+  }
+  .curtain-bar {
+    z-index: 10;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #dfe6ec;
+    &:hover {
+      cursor: move;
+    }
+  }
+
+  .handle {
+    position: absolute;
+    bottom: 2em;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: orange;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .work-left {
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 690px;
+  }
+  .work-left img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 25%;
+  }
+
+  .life-right {
+    z-index: 8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 690px;
+  }
+  .life-right img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 25%;
+  }
+}
+
 .portfolio {
   width: 100%;
   background: #f8f8f8;
@@ -272,6 +340,7 @@ header {
 
 .arrow-to-top {
   position: fixed;
+  z-index: 150;
   bottom: 2em;
   right: 0.7em;
   transition: all 0.7s;
