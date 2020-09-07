@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import work from "../img/nurse2-work.jpg";
 import life from "../img/nurse2-life.jpg";
+
 import { DraggableCore } from "react-draggable";
 
 export default function Curtain() {
@@ -39,9 +40,12 @@ export default function Curtain() {
         className="work-left"
         style={{ clipPath: `polygon(0 0, ${left}% 0, ${left}% 100%, 0% 100%)` }}
       >
+        <h1>Work</h1>
+
         <img src={work} alt="" />
       </div>
       <div className="life-right">
+        <h1>Life</h1>
         <img src={life} alt="" />
       </div>
     </div>

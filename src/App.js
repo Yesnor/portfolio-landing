@@ -11,8 +11,8 @@ function App() {
     <>
       <Header />
       <Home />
-      <Curtain />
       <Portfolio />
+      <Curtain />
       <Contact />
       <ArrowToTop />
     </>

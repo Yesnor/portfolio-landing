@@ -20,7 +20,7 @@ export default function Portfolio() {
       </div>
       <div>
         <div className="portfolio__item">
-          <div className="portfolio__item--aside">
+          <div className="portfolio__item--aside ">
             <h3>Currency converter</h3>
             <p>
               Simple and robust currency converter based on current values from
@@ -34,7 +34,7 @@ export default function Portfolio() {
               MORE AT THIS LINK
             </a>
           </div>
-          <div className="portfolio__item--image">
+          <div className="portfolio__item--image ">
             <img src={img1} alt="" />
           </div>
         </div>
