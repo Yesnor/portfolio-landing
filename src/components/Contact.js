@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import useScrollPosition from "./hooks/useScrollPosition";
 
 export default function Contact() {
+  const scrollPosition = useScrollPosition();
+  function getDocHeight() {
+    const D = document;
+    return Math.max(
+      D.body.scrollHeight,
+      D.documentElement.scrollHeight,
+      D.body.offsetHeight,
+      D.documentElement.offsetHeight,
+      D.body.clientHeight,
+      D.documentElement.clientHeight
+    );
+  }
+  useEffect(() => {
+    const el = document.querySelectorAll(".contact h1");
+
+    if (scrollPosition + window.innerHeight === getDocHeight()) {
+      el.forEach((item) => item.classList.add("u--bounceIn"));
+    } else {
+      el.forEach((item) => item.classList.remove("u--bounceIn"));
+    }
+  }, [scrollPosition]);
+
   return (
     <section id="contact" className="contact">
       <h1>Let's Create</h1>

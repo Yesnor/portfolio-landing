@@ -9,6 +9,7 @@ html {
 
 body,
 header,
+footer,
 section,
 aside,
 button,
@@ -180,45 +181,42 @@ header {
     font-size: 1.5rem;
   }
 
-  .work-left {
-    z-index: 9;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-height: 690px;
-    h1 {
-      position: absolute;
-      left: 5%;
-      top: 5%;
-    }
-  }
-  .work-left img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center 25%;
-  }
-
-  .life-right {
+  .beach {
     z-index: 8;
     position: absolute;
     width: 100%;
     height: 100%;
     max-height: 690px;
-
-    h1 {
-      position: absolute;
-      right: 5%;
-      top: 5%;
-    }
   }
-  .life-right img {
+  .beach img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
     object-position: center 25%;
+    transition: all 1s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .sea {
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 690px;
+  }
+  .sea img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 25%;
+    transition: all 1s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -396,15 +394,6 @@ header {
       font-size: 1rem;
     }
   }
-
-  .curtain {
-    .work-left,
-    .life-right {
-      h1 {
-        top: 40%;
-      }
-    }
-  }
   .portfolio {
     .portfolio__text {
       h1 {
@@ -449,13 +438,13 @@ header {
   }
 
   .curtain {
-    .work-left {
+    .beach {
       h1 {
         font-size: 3.5rem;
         left: 15%;
       }
     }
-    .life-right {
+    .sea {
       h1 {
         font-size: 3.5rem;
         right: 15%;

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import work from "../img/nurse2-work.jpg";
-import life from "../img/nurse2-life.jpg";
+// import work from "../img/nurse2-work.jpg";
+// import life from "../img/nurse2-life.jpg";
 
+import sea from "../img/sea.jpg";
+import beach from "../img/beach.jpg";
 import { DraggableCore } from "react-draggable";
 
 export default function Curtain() {
@@ -37,16 +39,13 @@ export default function Curtain() {
         </div>
       </DraggableCore>
       <div
-        className="work-left"
+        className="sea"
         style={{ clipPath: `polygon(0 0, ${left}% 0, ${left}% 100%, 0% 100%)` }}
       >
-        <h1>Work</h1>
-
-        <img src={work} alt="" />
+        <img src={sea} alt="" />
       </div>
-      <div className="life-right">
-        <h1>Life</h1>
-        <img src={life} alt="" />
+      <div className="beach">
+        <img src={beach} alt="" />
       </div>
     </div>
   );
@@ -122,12 +121,12 @@ export default function Curtain() {
         <div className="bar"></div>
       </div>
       <div
-        className="work-left"
+        className="beach"
         style={{ clipPath: `polygon(0 0, ${left}% 0, ${left}% 100%, 0% 100%)` }}
       >
         <img src={work} alt="" />
       </div>
-      <div className="life-right">
+      <div className="sea">
         {" "}
         <img src={life} alt="" />
       </div>
