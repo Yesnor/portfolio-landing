@@ -4,6 +4,7 @@ import img3 from "../img/3.jpg";
 import img2 from "../img/2.jpg";
 import img4 from "../img/4.jpg";
 import img5 from "../img/5.jpg";
+import img6 from "../img/6.jpg";
 
 export default function Portfolio() {
   return (
@@ -19,6 +20,24 @@ export default function Portfolio() {
         </p>
       </div>
       <div>
+        <div className="portfolio__item item-even">
+          <div className="portfolio__item--image">
+            <img src={img6} alt="" />
+          </div>
+          <div className="portfolio__item--aside">
+            <h3>Cars & Bids</h3>
+            <p>
+              An online car auction marketplace to buy and sell modern
+              enthusiast cars
+            </p>
+            <p>Cars & Bids offers significant advantages over other websites</p>
+
+            <a href="https://cars-and-bids757.netlify.app/" className="btn">
+              MORE AT THIS LINK
+            </a>
+          </div>
+        </div>
+
         <div className="portfolio__item">
           <div className="portfolio__item--aside ">
             <h3>Currency converter</h3>
