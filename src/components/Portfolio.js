@@ -5,6 +5,7 @@ import img2 from "../img/2.jpg";
 import img4 from "../img/4.jpg";
 import img5 from "../img/5.jpg";
 import img6 from "../img/6.jpg";
+import LazyLoad from "react-lazyload";
 
 export default function Portfolio() {
   return (
@@ -22,7 +23,9 @@ export default function Portfolio() {
       <div>
         <div className="portfolio__item item-even">
           <div className="portfolio__item--image">
-            <img src={img6} alt="" />
+            <LazyLoad>
+              <img src={img6} alt="" />
+            </LazyLoad>
           </div>
           <div className="portfolio__item--aside">
             <h3>Cars & Bids</h3>
@@ -54,13 +57,17 @@ export default function Portfolio() {
             </a>
           </div>
           <div className="portfolio__item--image ">
-            <img src={img1} alt="" />
+            <LazyLoad>
+              <img src={img1} alt="" />
+            </LazyLoad>
           </div>
         </div>
 
         <div className="portfolio__item item-even">
           <div className="portfolio__item--image">
-            <img src={img3} alt="" />
+            <LazyLoad>
+              <img src={img3} alt="" />{" "}
+            </LazyLoad>
           </div>
           <div className="portfolio__item--aside">
             <h3>Weather forecast</h3>
@@ -87,13 +94,17 @@ export default function Portfolio() {
             </a>
           </div>
           <div className="portfolio__item--image">
-            <img src={img2} alt="" />
+            <LazyLoad>
+              <img src={img2} alt="" />
+            </LazyLoad>
           </div>
         </div>
 
         <div className="portfolio__item item-even ">
           <div className="portfolio__item--image">
-            <img src={img4} alt="" />
+            <LazyLoad>
+              <img src={img4} alt="" />
+            </LazyLoad>
           </div>
           <div className="portfolio__item--aside">
             <h3>Labyrinth game</h3>
@@ -115,7 +126,9 @@ export default function Portfolio() {
             </a>
           </div>
           <div className="portfolio__item--image">
-            <img src={img5} alt="" />
+            <LazyLoad>
+              <img src={img5} alt="" />
+            </LazyLoad>
           </div>
         </div>
       </div>
