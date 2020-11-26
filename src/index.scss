@@ -76,6 +76,7 @@ header {
     }
   }
   nav {
+    position: relative;
     ul {
       display: flex;
       li {
@@ -101,6 +102,8 @@ header {
   padding: 30% 4em;
   height: 500px;
   background: url("./bg-home2.jpeg") no-repeat;
+  background-color: rgba(255, 0, 0, 0.2);
+  background-blend-mode: soft-light;
   background-size: cover;
   color: white;
   .home__title {
@@ -116,15 +119,6 @@ header {
     position: relative;
     margin-top: 4em;
     font-size: 0.7rem;
-  }
-  .home-shadow {
-    position: absolute;
-    height: 500px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 0, 0, 0.2);
   }
 
   button {
@@ -152,9 +146,6 @@ header {
   border: 1px solid black;
   overflow: hidden;
 
-  .curtain-drag:hover {
-    cursor: move;
-  }
   .curtain-bar {
     z-index: 10;
     position: absolute;

@@ -4,7 +4,7 @@ import logo from "../img/logo.png";
 
 export default function Header() {
   const scrollPosition = useScrollPosition();
-
+ 
   return (
     <header className={scrollPosition > 100 ? "red-nav" : ""}>
       <div className="logo">
@@ -12,7 +12,7 @@ export default function Header() {
           <img src={logo} alt="" />
         </a>
       </div>
-      <nav>
+      <nav>        
         <ul>
           <li>
             <a href="#portfolio">Portfolio</a>
