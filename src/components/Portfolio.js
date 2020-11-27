@@ -6,13 +6,16 @@ import img4 from "../img/4.jpg";
 import img5 from "../img/5.jpg";
 import img6 from "../img/6.jpg";
 import LazyLoad from "react-lazyload";
-
+import Wave from "./Wave";
 export default function Portfolio() {
   return (
     <section id="portfolio" className="portfolio">
       <div className="portfolio__text">
         {" "}
-        <h1>Portfolio</h1>
+        <div className="d-flex flex-column justify-content-center align-items-center">
+          <Wave />
+          <h1>Portfolio</h1>
+        </div>
         <p>
           Below you can see some projects we've been working on lately. We
           divide each project into four follow-up areas: comprehensive research,
